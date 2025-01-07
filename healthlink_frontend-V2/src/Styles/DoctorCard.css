@@ -1,0 +1,152 @@
+.doctor-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  /* Doctor Profile Section */
+  .doctor-profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+  }
+  
+  .doctor-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .doctor-info h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #007bff;
+  }
+  
+  .doctor-info p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .view-profile {
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .view-profile:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Availability Section */
+  .availability {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .day-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .day-info {
+    text-align: center;
+    flex: 1;
+  }
+  
+  .day-info h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  .day-navigation button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #007bff;
+  }
+  
+  .day-navigation button:disabled {
+    color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Slots Section */
+  .slots {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Space between columns */
+    margin-top: 10px; /* Space below navigation */
+  }
+  
+  .day-slots {
+    flex: 1; /* Equal width for each column */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-left: 1px solid #ddd; /* Add separation between columns */
+    padding-left: 10px; /* Space inside each column */
+  }
+  
+  .day-slots:first-child {
+    border-left: none; /* Remove left border for the first column */
+    padding-left: 0;
+  }
+  
+  .slot {
+    width: 100%; /* Full width of the column */
+    text-align: center;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .slot:hover {
+    background-color: #218838;
+  }
+  
+  .more-slots {
+    width: 100%; /* Full width of the column */
+    padding: 10px;
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .more-slots:hover {
+    background-color: #117a8b;
+  }
+  
+  .no-slots {
+    font-size: 14px;
+    color: #888;
+    text-align: center;
+  }
+  

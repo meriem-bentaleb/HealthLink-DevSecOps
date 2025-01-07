@@ -1,0 +1,105 @@
+/* Sidebar Container */
+.sidebar-container {
+    width: 250px;
+    height: 100vh;
+    background-color: #094654; /* Blue background */
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px; /* Added padding for space at the bottom */
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Push bottom elements to the bottom */
+    align-items: center; /* Center all items horizontally */
+}
+
+/* Sidebar List Styling */
+.sidebar-container ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the sidebar items */
+    width: 100%; /* Ensure the list takes up full width */
+}
+
+/* Sidebar Items */
+.sidebar-container ul li {
+    padding: 15px 20px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    width: 100%; /* Make items take full width */
+    text-align: center; /* Center the text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between icon and text */
+}
+
+.sidebar-container ul li:hover {
+    background-color: #16A085; /* Light teal background for hover effect */
+}
+
+.sidebar-container .active {
+    background-color: #1ABC9C; /* Light teal for active section */
+}
+
+/* Icons Styling */
+.sidebar-container ul li i {
+    font-size: 22px; /* Adjust icon size */
+}
+
+/* Separator Line Between Sidebar Items */
+.sidebar-container ul li + li {
+    border-top: 1px solid #2C3E50; /* Gray line between items */
+}
+
+/* Book Appointment Button Styling */
+.sidebar-btn-book {
+    background-color: #16A085; /* Teal color for the button (matching sidebar accent) */
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    width: 100%; /* Make it full width */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-top: 20px; /* Margin to separate from the menu items */
+}
+
+.sidebar-btn-book:hover {
+    background-color: #1ABC9C; /* Lighter teal on hover */
+}
+
+.sidebar-btn-book i {
+    margin-right: 8px;
+}
+
+/* Logout Link Styling */
+.sidebar-logout-link {
+    color: #e3210e;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    display: flex;
+    align-items: center; /* Aligns icon and text */
+    cursor: pointer;
+    justify-content: center;
+    margin-top: 20px; /* Margin to separate from book appointment */
+}
+
+.sidebar-logout-link:hover {
+    color: #C0392B; /* Darker red on hover */
+}
+
+.sidebar-logout-link i {
+    margin-right: 10px; /* Margin between the icon and text */
+}

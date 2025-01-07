@@ -1,0 +1,100 @@
+.patient-info {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.patient-info h2 {
+    color: #094654;
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.patient-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.patient-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.patient-field label {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.patient-field input {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #f3f6ff;
+    transition: all 0.3s ease;
+}
+
+.patient-field input:focus {
+    border-color: #0056b3;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.3);
+}
+
+.patient-field p {
+    font-size: 16px;
+    color: #333;
+}
+
+.patient-actions {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    border: none;
+    width: 120px;
+}
+
+.btn-primary {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #218838;
+}
+
+.btn-secondary {
+    background-color: #ffc107;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #e0a800;
+}
+
+.btn-edit {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-edit:hover {
+    background-color: #0056b3;
+}

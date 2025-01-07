@@ -1,0 +1,28 @@
+.appointment-page {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .top-filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #007bff;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .doctor-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .doctor-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-height: 600px; /* Limit the height */
+    overflow-y: auto; /* Add vertical scrolling */
+  }  

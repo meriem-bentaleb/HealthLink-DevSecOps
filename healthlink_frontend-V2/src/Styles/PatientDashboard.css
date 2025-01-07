@@ -1,0 +1,93 @@
+.patient-dashboard {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sidebar-container {
+    width: 250px;
+    background-color: #f3f6ff;
+    /*height: 100%;*/
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding doesn't affect the width */
+    position: fixed; /* Fix the sidebar in place */
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.main-content {
+    margin-left: 250px; /* Offset main content to the right to prevent overlap with sidebar */
+    flex-grow: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    overflow-y: auto;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+.loading {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 50px;
+}
+
+/* Main Content */
+.patient-info, .medical-records, .appointments {
+    font-family: 'Rubik', sans-serif;
+}
+
+.patient-info h2, .medical-records h2, .appointments h2 {
+    color: #094654;
+    font-size: 32px;
+}
+
+.patient-info p, .medical-records p, .appointments p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Sidebar Styles */
+.sidebar-container {
+    background-color: #0056b3;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    box-sizing: border-box; /* Prevent padding from affecting width */
+    width: 250px;
+}
+
+.sidebar-container a {
+    color: white;
+    font-size: 20px;
+    margin: 10px 0;
+    text-decoration: none;
+}
+
+.sidebar-container a:hover {
+    color: #0cc2ea;
+}
+
+/* Responsive Styling for Mobile */
+@media (max-width: 768px) {
+    .patient-dashboard {
+        flex-direction: column;
+    }
+
+    .sidebar-container {
+        width: 100%;
+        position: relative; /* Sidebar no longer fixed on small screens */
+        height: auto;
+        padding: 10px;
+    }
+
+    .main-content {
+        margin-left: 0; /* No sidebar offset on mobile */
+        padding: 10px;
+    }
+}

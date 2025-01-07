@@ -1,0 +1,19 @@
+.appointments {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.appointments h2 {
+    margin-bottom: 20px;
+}
+
+.appointments ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.appointments ul li {
+    margin-bottom: 15px;
+}

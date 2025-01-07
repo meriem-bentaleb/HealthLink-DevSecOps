@@ -1,0 +1,78 @@
+.hero {
+    background-color: #118aa4;
+    color: white;
+    text-align: center;
+    padding: 100px 20px; /* Ensure enough spacing */
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.hero h2 {
+    position: absolute;
+    top: 380px;
+    left: 598px;
+    font-family: Inter;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #FFFFFFFF;
+}
+.hero a {
+    text-decoration: none; /* Removes underline */
+}
+
+.hero a:hover {
+    text-decoration: none; /* Ensures no underline on hover */
+}
+
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-primary {
+    background-color: #046b6c;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 30px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: white;
+    color: #046b6c;
+    border: 1px solid #046b6c;
+}
+.login-link {
+    color: #FFFFFF; /* Adjust the color to match your design */
+    text-decoration: underline; /* Makes it visually clear it's a link */
+    font-weight: bold;
+}
+
+.login-link:hover {
+    color: #046b6c; /* Change the hover color for better UX */
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .btn-primary {
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,193 @@
+.register-doc-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #f8f9fa;
+    padding: 50px;
+    height: 100vh;
+}
+
+.register-doc-form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+}
+
+.register-doc-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-left, .form-right {
+    width: 48%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+.form-group-checkbox {
+    margin-top: 20px;
+}
+
+button.register-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #21ABAE;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button.register-btn:hover {
+    background-color: #1f9a9a;
+}
+
+p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+p a {
+    color: #21ABAE;
+    text-decoration: none;
+}
+
+
+/* Conteneur pour le formulaire et la description */
+.form-and-description-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1400px; /* Agrandir la largeur maximale pour plus d'espace */
+    margin: 0 auto;
+}
+
+/* Troisième colonne pour la description */
+.register-doc-right {
+    background-color: #f4f6f9;
+    padding: 30px; /* Augmenter l'espacement intérieur pour plus d'espace */
+    border-radius: 8px;
+    width: 60%; /* Augmenter la largeur de la colonne */
+    text-align: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Ajouter une légère ombre */
+}
+
+.register-doc-right .logo {
+    width: 298px; /* Agrandir le logo */
+    height:  200%;
+    margin-bottom: 20px;
+}
+
+.register-doc-right h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 15px; /* Augmenter l'espacement sous le titre */
+}
+
+.register-doc-right p {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Style harmonisé pour les étapes */
+.steps {
+    margin-top: 20px;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; /* Espacement entre les étapes */
+}
+
+.step-number {
+    background-color: #21ABAE;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 15px; /* Augmenter l'espacement entre le numéro et le texte */
+    width: 10px; /* Agrandir la taille du cercle */
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px; /* Augmenter la taille du numéro */
+}
+
+/* Ajustement de l'étape 2 pour être similaire à l'étape 1 */
+.steps .step:nth-child(2) p {
+    margin: 0;
+    font-size: 15px;
+    color: #666;
+    /*width: 25px;*/
+}
+
+/* Ajouter des icônes aux dernières phrases */
+.extra-features {
+    margin-top: 30px;
+}
+
+.extra-features p {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.extra-features p::before {
+    content: "✓"; /* Ajouter une icône en forme de coche */
+    color: #21ABAE; /* Couleur de l'icône */
+    margin-right: 10px; /* Espacement entre l'icône et le texte */
+    font-size: 18px; /* Taille de l'icône */
+}
+
+/* Bannière en haut de la page */
+
+/*    */
+
+
+.header-with-logo {
+    display: flex;
+    justify-content: flex-start; /* Aligne les éléments à gauche */
+    /* align-items: center;  Centre verticalement le logo et le texte */
+}
+
+
+.mini-logo {
+    width: 70px; /* Ajuste la taille du logo selon tes besoins */
+    margin-right: 10px; /* Espace entre le logo et le texte */
+}
+
+.header-with-logo h2 {
+    margin: 0; /* Assure-toi qu'il n'y a pas de marge autour du texte */
+}
