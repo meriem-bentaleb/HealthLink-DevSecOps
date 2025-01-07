@@ -14,7 +14,10 @@ pipeline {
             }
         }
         stage('Build') {
-            steps {
+            environment {
+                JAVA_HOME = tool name: 'JDK17'
+            }
+        steps {
                 sh 'mvn clean package -DskipTests'
             }
         }
