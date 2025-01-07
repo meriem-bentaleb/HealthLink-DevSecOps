@@ -1,0 +1,44 @@
+pipeline {
+    agent any
+    environment {
+        DOCKER_IMAGE = "bentalebmeris/healthlink-frontend" // Replace with your Docker Hub username
+    }
+    stages {
+        stage('Checkout') {
+            steps {
+                git branch: 'main', url: 'https://github.com/khad-02/HealthLink-DevSecOps.git'
+            }
+        }
+        stage('Install Dependencies') {
+            steps {
+                sh 'npm install'
+            }
+        }
+        stage('Build') {
+            steps {
+                sh 'npm run build'
+            }
+        }
+        stage('Build Docker Image') {
+            steps {
+                script {
+                    docker.build("${DOCKER_IMAGE}")
+                }
+            }
+        }
+        stage('Push Docker Image') {
+            steps {
+                script {
+                    docker.withRegistry('https://registry.hub.docker.com', 'doha') {
+                        docker.image("${DOCKER_IMAGE}").push()
+                    }
+                }
+            }
+        }
+    }
+    post {
+        always {
+            sh 'docker system prune -f'
+        }
+    }
+}
